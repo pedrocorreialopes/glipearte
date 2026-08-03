@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /pages/login.html
+Disallow: /pages/cadastro.html
+Disallow: /pages/area-cliente.html
+
+Sitemap: https://www.glipeartepegueemonte.com.br/sitemap.xml
