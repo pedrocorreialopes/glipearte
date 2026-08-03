@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" aria-label="Kit festa infantil">
+  <rect width="400" height="260" fill="#fff8e7"/>
+  <rect x="40" y="40" width="320" height="180" rx="20" fill="#f0d890" opacity="0.3"/>
+  <circle cx="200" cy="130" r="60" fill="#f0d890" opacity="0.5"/>
+  <text x="50%" y="55%" text-anchor="middle" font-family="Inter, sans-serif" font-size="24" fill="#1a1a1a">Festas Infantis</text>
+  <text x="50%" y="70%" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#666">Kit decoração completa</text>
+</svg>
