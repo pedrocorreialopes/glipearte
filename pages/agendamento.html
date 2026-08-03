@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento | Glipearte Pegue e Monte - Fortaleza/CE</title>
+  <meta name="description" content="Agende seu aluguel de artigos para festas na Glipearte. Escolha data, kit e reserve online para Fortaleza e região.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Agendamento | Glipearte Pegue e Monte">
+  <meta property="og:description" content="Agende sua festa com a Glipearte em Fortaleza.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.glipeartepegueemonte.com.br/pages/agendamento.html">
+  <meta property="og:image" content="../images/og-agendamento.jpg">
+  <link rel="canonical" href="https://www.glipeartepegueemonte.com.br/pages/agendamento.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Pular para conteúdo principal</a>
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html" aria-label="Glipearte Pegue e Monte - Página inicial">
+        <img src="../images/logo-glipearte.svg" alt="Glipearte Pegue e Monte" width="180" height="60">
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger"></span><span class="hamburger"></span><span class="hamburger"></span>
+      </button>
+      <nav class="main-nav" id="nav-menu" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="depoimentos.html">Depoimentos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="agendamento.html" class="btn btn-primary">Agendar</a>
+        <a href="login.html" class="btn btn-ghost">Área do Cliente</a>
+      </div>
+    </div>
+  </header>
+
+  <nav class="breadcrumbs" aria-label="Você está em:">
+    <div class="container">
+      <ol>
+        <li><a href="../index.html">Home</a></li>
+        <li aria-current="page">Agendamento</li>
+      </ol>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <span class="eyebrow reveal">Reserve sua data</span>
+        <h1 id="page-title" class="reveal">Agendamento</h1>
+        <p class="reveal">Escolha o kit, a data e faça sua reserva de forma rápida e prática.</p>
+      </div>
+    </section>
+
+    <section class="section booking-section" aria-labelledby="booking-title">
+      <div class="container">
+        <div class="booking-wrapper reveal">
+          <h2 id="booking-title">Formulário de agendamento</h2>
+          <form class="booking-form" id="booking-form" action="#" method="post" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="booking-name">Nome completo <span aria-label="obrigatório">*</span></label>
+                <input type="text" id="booking-name" name="name" required aria-required="true" autocomplete="name">
+                <span class="error-message" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="booking-email">E-mail <span aria-label="obrigatório">*</span></label>
+                <input type="email" id="booking-email" name="email" required aria-required="true" autocomplete="email">
+                <span class="error-message" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="booking-phone">Telefone <span aria-label="obrigatório">*</span></label>
+                <input type="tel" id="booking-phone" name="phone" required aria-required="true" autocomplete="tel" placeholder="(85) 99999-9999">
+                <span class="error-message" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="booking-date">Data da festa <span aria-label="obrigatório">*</span></label>
+                <input type="text" id="booking-date" name="date" required aria-required="true" placeholder="Selecione a data" autocomplete="off">
+                <span class="error-message" aria-live="polite"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="booking-kit">Kit ou tema de interesse <span aria-label="obrigatório">*</span></label>
+                <select id="booking-kit" name="kit" required aria-required="true">
+                  <option value="">Selecione</option>
+                  <option value="unicornio">Kit Unicórnio</option>
+                  <option value="dinossauro">Kit Dinossauro</option>
+                  <option value="princesa">Kit Princesa</option>
+                  <option value="cha-bebe">Chá de Bebê</option>
+                  <option value="cha-panela">Chá de Panela</option>
+                  <option value="aniversario">Aniversário Adulto</option>
+                  <option value="casamento">Casamento Civil</option>
+                  <option value="mesversario">Mesversário</option>
+                  <option value="outro">Outro / Personalizado</option>
+                </select>
+                <span class="error-message" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label for="booking-guests">Número de convidados</label>
+                <input type="number" id="booking-guests" name="guests" min="1" max="200" placeholder="Ex: 30">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="booking-address">Endereço para entrega (se desejar)</label>
+              <input type="text" id="booking-address" name="address" autocomplete="street-address" placeholder="Rua, número, bairro, cidade">
+            </div>
+            <div class="form-group">
+              <label for="booking-message">Detalhes adicionais</label>
+              <textarea id="booking-message" name="message" rows="4" placeholder="Conte mais sobre sua festa, dúvidas ou necessidades especiais..."></textarea>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" id="booking-privacy" name="privacy" required aria-required="true">
+              <label for="booking-privacy">Li e concordo com a <a href="privacidade.html">Política de Privacidade</a>.</label>
+              <span class="error-message" aria-live="polite"></span>
+            </div>
+            <div class="booking-summary" id="booking-summary" aria-live="polite">
+              <p>Preencha os dados para receber um orçamento personalizado.</p>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Solicitar agendamento</button>
+            <div class="form-feedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section calendar-info" aria-labelledby="calendar-title">
+      <div class="container">
+        <div class="two-columns">
+          <div class="reveal">
+            <h2 id="calendar-title">Como funciona o calendário</h2>
+            <p>As datas disponíveis aparecem no calendário. Após enviar o agendamento, nossa equipe entra em contato para confirmar disponibilidade, valores e formas de pagamento.</p>
+            <ul>
+              <li>Reserva com antecedência mínima de 7 dias</li>
+              <li>Sinal de 50% para garantir a data</li>
+              <li>Alteração de data mediante disponibilidade</li>
+              <li>Cancelamento com reembolso conforme política</li>
+            </ul>
+          </div>
+          <div class="reveal">
+            <img src="../images/agendamento.jpg" alt="Calendário e itens de festa organizados" loading="lazy" width="600" height="400">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html"><img src="../images/logo-glipearte.svg" alt="Glipearte Pegue e Monte" width="160" height="54"></a>
+          <p>Festas incríveis começam aqui.</p>
+          <div class="social-links" aria-label="Redes sociais">
+            <a href="https://instagram.com/glipeartepegueemonte" target="_blank" rel="noopener" aria-label="Instagram"><span class="icon-instagram" aria-hidden="true"></span></a>
+            <a href="https://facebook.com/glipeartepegueemonte" target="_blank" rel="noopener" aria-label="Facebook"><span class="icon-facebook" aria-hidden="true"></span></a>
+            <a href="https://wa.me/5585999999999" target="_blank" rel="noopener" aria-label="WhatsApp"><span class="icon-whatsapp" aria-hidden="true"></span></a>
+          </div>
+        </div>
+        <nav class="footer-nav" aria-label="Links rápidos">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contact">
+          <h3>Contato</h3>
+          <address>
+            <p><span aria-hidden="true">📍</span> Fortaleza - CE</p>
+            <p><span aria-hidden="true">📞</span> <a href="tel:+5585999999999">(85) 99999-9999</a></p>
+            <p><span aria-hidden="true">✉️</span> <a href="mailto:contato@glipeartepegueemonte.com.br">contato@glipeartepegueemonte.com.br</a></p>
+          </address>
+        </div>
+        <div class="footer-hours">
+          <h3>Horário</h3>
+          <ul><li>Segunda a Sexta: 08h às 18h</li><li>Sábado: 08h às 12h</li><li>Domingo: Fechado</li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Glipearte Pegue e Monte. Todos os direitos reservados.</p>
+        <p>Desenvolvido por <strong>Pedro Correia Lopes Filho</strong>.</p>
+        <p><a href="privacidade.html">Política de Privacidade</a> · <a href="termos.html">Termos de Uso</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="chat-toggle" aria-label="Abrir chat de atendimento" aria-expanded="false" aria-controls="chat-window">
+    <span class="icon-chat" aria-hidden="true"></span>
+  </button>
+  <div class="chat-window" id="chat-window" role="dialog" aria-label="Chat online" aria-hidden="true">
+    <div class="chat-header"><strong>Atendimento Glipearte</strong><button class="chat-close" aria-label="Fechar chat">✕</button></div>
+    <div class="chat-body" id="chat-body"><div class="chat-message bot">Olá! Como posso ajudar na sua festa hoje?</div></div>
+    <form class="chat-form" id="chat-form">
+      <label for="chat-input" class="visually-hidden">Mensagem</label>
+      <input type="text" id="chat-input" placeholder="Digite sua mensagem..." autocomplete="off">
+      <button type="submit" aria-label="Enviar mensagem">➤</button>
+    </form>
+  </div>
+
+  <a href="#topo" class="back-to-top" aria-label="Voltar ao topo"><span aria-hidden="true">↑</span></a>
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/chatbot.js" defer></script>
+  <script src="../js/forms.js" defer></script>
+  <script src="../js/agendamento.js" defer></script>
+</body>
+</html>

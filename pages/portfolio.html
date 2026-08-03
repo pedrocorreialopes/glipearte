@@ -3,33 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ - Perguntas Frequentes | Glipearte Pegue e Monte</title>
-  <meta name="description" content="Tire suas dúvidas sobre aluguel de artigos para festas em Fortaleza. Funcionamento, prazos, devolução, pagamento e muito mais.">
+  <title>Portfólio de Festas | Glipearte Pegue e Monte</title>
+  <meta name="description" content="Veja festas reais montadas com produtos da Glipearte em Fortaleza. Inspiração para festas infantis, chás, casamentos e aniversários.">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="FAQ | Glipearte Pegue e Monte">
-  <meta property="og:description" content="Respostas para as principais dúvidas sobre aluguel de festas.">
+  <meta property="og:title" content="Portfólio de Festas | Glipearte Pegue e Monte">
+  <meta property="og:description" content="Inspirações de festas montadas com aluguel da Glipearte em Fortaleza.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.glipeartepegueemonte.com.br/pages/faq.html">
-  <meta property="og:image" content="../images/og-faq.jpg">
-  <link rel="canonical" href="https://www.glipeartepegueemonte.com.br/pages/faq.html">
+  <meta property="og:url" content="https://www.glipeartepegueemonte.com.br/pages/portfolio.html">
+  <meta property="og:image" content="../images/og-portfolio.jpg">
+  <link rel="canonical" href="https://www.glipeartepegueemonte.com.br/pages/portfolio.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/animations.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {"@type": "Question", "name": "Como funciona o aluguel pegue e monte?", "acceptedAnswer": {"@type": "Answer", "text": "Você escolhe os itens, retira na loja ou solicita entrega, monta sua festa e devolve as peças após o evento."}},
-      {"@type": "Question", "name": "Preciso lavar as peças antes de devolver?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, as peças devem ser devolvidas limpas e sem resíduos de comida. A higienização garante qualidade para o próximo cliente."}},
-      {"@type": "Question", "name": "Qual o prazo de locação?", "acceptedAnswer": {"@type": "Answer", "text": "O prazo padrão é de 3 dias: retirada um dia antes, uso no dia da festa e devolução no dia seguinte."}},
-      {"@type": "Question", "name": "Vocês entregam em Fortaleza?", "acceptedAnswer": {"@type": "Answer", "text": "Sim, oferecemos entrega e retirada em Fortaleza e região metropolitana, mediante taxa de acordo com o endereço."}},
-      {"@type": "Question", "name": "Como faço para reservar?", "acceptedAnswer": {"@type": "Answer", "text": "Você pode reservar pelo site, WhatsApp, telefone ou pessoalmente na loja. Recomendamos reservar com antecedência."}}
-    ]
-  }
-  </script>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Pular para conteúdo principal</a>
@@ -46,10 +33,10 @@
           <li><a href="../index.html">Home</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="servicos.html">Serviços</a></li>
-          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="portfolio.html" class="active" aria-current="page">Portfólio</a></li>
           <li><a href="galeria.html">Galeria</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <li><a href="faq.html" class="active" aria-current="page">FAQ</a></li>
+          <li><a href="faq.html">FAQ</a></li>
           <li><a href="depoimentos.html">Depoimentos</a></li>
           <li><a href="contato.html">Contato</a></li>
         </ul>
@@ -65,7 +52,7 @@
     <div class="container">
       <ol>
         <li><a href="../index.html">Home</a></li>
-        <li aria-current="page">FAQ</li>
+        <li aria-current="page">Portfólio</li>
       </ol>
     </div>
   </nav>
@@ -73,52 +60,60 @@
   <main id="main-content">
     <section class="page-hero" aria-labelledby="page-title">
       <div class="container">
-        <span class="eyebrow reveal">Dúvidas</span>
-        <h1 id="page-title" class="reveal">Perguntas Frequentes</h1>
-        <p class="reveal">Tire suas dúvidas sobre o funcionamento da Glipearte e o aluguel de artigos para festas em Fortaleza.</p>
+        <span class="eyebrow reveal">Inspirações reais</span>
+        <h1 id="page-title" class="reveal">Portfólio de Festas</h1>
+        <p class="reveal">Festas montadas por clientes da Glipearte. Inspire-se para criar a sua celebração.</p>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="faq-title">
-      <div class="container narrow">
-        <h2 id="faq-title" class="visually-hidden">Lista de perguntas</h2>
-        <div class="faq-search reveal">
-          <label for="faq-search" class="visually-hidden">Buscar perguntas</label>
-          <input type="search" id="faq-search" placeholder="Buscar pergunta..." aria-label="Buscar perguntas">
+    <section class="section" aria-label="Filtros de portfólio">
+      <div class="container">
+        <div class="filter-tags reveal" role="group" aria-label="Filtrar portfólio">
+          <button class="filter-btn active" data-filter="all">Todas</button>
+          <button class="filter-btn" data-filter="infantil">Infantil</button>
+          <button class="filter-btn" data-filter="chas">Chás</button>
+          <button class="filter-btn" data-filter="adulto">Adulto</button>
+          <button class="filter-btn" data-filter="mesversario">Mesversário</button>
         </div>
-        <div class="faq-list" id="faq-list">
-          <details class="faq-item reveal">
-            <summary><h3>Como funciona o aluguel pegue e monte?</h3></summary>
-            <p>Você escolhe os itens em nosso catálogo, retira na loja ou solicita entrega, monta a decoração da sua festa do seu jeito e devolve as peças no prazo combinado. É prático, econômico e sustentável.</p>
-          </details>
-          <details class="faq-item reveal">
-            <summary><h3>Preciso lavar as peças antes de devolver?</h3></summary>
-            <p>Sim, as peças devem ser devolvidas limpas e sem resíduos de alimentos. Assim garantimos a qualidade e higiene para o próximo cliente. Fornecemos orientações de limpeza no momento da retirada.</p>
-          </details>
-          <details class="faq-item reveal">
-            <summary><h3>Qual o prazo de locação?</h3></summary>
-            <p>O prazo padrão é de 3 dias: retirada um dia antes do evento, uso no dia da festa e devolução no dia seguinte. É possível negociar prazos maiores sob consulta.</p>
-          </details>
-          <details class="faq-item reveal">
-            <summary><h3>Vocês entregam em Fortaleza?</h3></summary>
-            <p>Sim, realizamos entrega e retirada em Fortaleza e região metropolitana. O valor da taxa de entrega é calculado de acordo com o endereço.</p>
-          </details>
-          <details class="faq-item reveal">
-            <summary><h3>Como faço para reservar?</h3></summary>
-            <p>Você pode reservar pelo site, WhatsApp, telefone ou pessoalmente na loja. Recomendamos reservar com pelo menos 15 dias de antecedência para garantir disponibilidade.</p>
-          </details>
-          <details class="faq-item reveal">
-            <summary><h3>Quais formas de pagamento são aceitas?</h3></summary>
-            <p>Aceitamos Pix, cartão de crédito e débito, boleto e transferência bancária. Para reservas, pode ser solicitado sinal de 50% do valor total.</p>
-          </details>
-          <details class="faq-item reveal">
-            <summary><h3>E se alguma peça quebrar ou estragar?</h3></summary>
-            <p>Cobramos uma taxa proporcional ao dano ou perda do item, conforme termos do contrato de locação. Recomendamos cuidado especial durante a montagem e desmontagem.</p>
-          </details>
-          <details class="faq-item reveal">
-            <summary><h3>Posso montar sozinha ou preciso de decorador?</h3></summary>
-            <p>Você pode montar sozinha! Disponibilizamos tutoriais, fotos de referência e dicas para facilitar. Se preferir, indicamos profissionais parceiros em Fortaleza.</p>
-          </details>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="portfolio-grid-title">
+      <div class="container">
+        <h2 id="portfolio-grid-title" class="visually-hidden">Galeria de festas</h2>
+        <div class="portfolio-grid">
+          <figure class="portfolio-item reveal" data-category="infantil">
+            <img src="../images/portfolio-1.jpg" alt="Festa infantil tema unicórnio" loading="lazy" width="400" height="300">
+            <figcaption><strong>Festa Unicórnio</strong><span>Aniversário de 6 anos</span></figcaption>
+          </figure>
+          <figure class="portfolio-item reveal" data-category="chas">
+            <img src="../images/portfolio-2.jpg" alt="Chá de bebê decoração azul e branco" loading="lazy" width="400" height="300">
+            <figcaption><strong>Chá de Bebê</strong><span>Esperando o Pedro</span></figcaption>
+          </figure>
+          <figure class="portfolio-item reveal" data-category="adulto">
+            <img src="../images/portfolio-3.jpg" alt="Aniversário adulto elegante" loading="lazy" width="400" height="300">
+            <figcaption><strong>Aniversário 50 anos</strong><span>Celebração em dourado</span></figcaption>
+          </figure>
+          <figure class="portfolio-item reveal" data-category="mesversario">
+            <img src="../images/portfolio-4.jpg" alt="Mesversário bebê rosa" loading="lazy" width="400" height="300">
+            <figcaption><strong>Mesversário 6 meses</strong><span>Tema borboletas</span></figcaption>
+          </figure>
+          <figure class="portfolio-item reveal" data-category="infantil">
+            <img src="../images/portfolio-5.jpg" alt="Festa infantil tema dinossauro" loading="lazy" width="400" height="300">
+            <figcaption><strong>Festa Dinossauro</strong><span>Aniversário de 4 anos</span></figcaption>
+          </figure>
+          <figure class="portfolio-item reveal" data-category="chas">
+            <img src="../images/portfolio-6.jpg" alt="Chá de panela decoração rústica" loading="lazy" width="400" height="300">
+            <figcaption><strong>Chá de Panela</strong><span>Noivado da Ana</span></figcaption>
+          </figure>
+          <figure class="portfolio-item reveal" data-category="adulto">
+            <img src="../images/portfolio-7.jpg" alt="Casamento civil decoração romântica" loading="lazy" width="400" height="300">
+            <figcaption><strong>Casamento Civil</strong><span>Celebração íntima</span></figcaption>
+          </figure>
+          <figure class="portfolio-item reveal" data-category="infantil">
+            <img src="../images/portfolio-8.jpg" alt="Festa princesa rosa e dourado" loading="lazy" width="400" height="300">
+            <figcaption><strong>Festa Princesa</strong><span>Aniversário de 5 anos</span></figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -126,11 +121,11 @@
     <section class="cta-banner section" aria-labelledby="cta-title">
       <div class="container">
         <div class="cta-box reveal">
-          <h2 id="cta-title">Ainda tem dúvidas?</h2>
-          <p>Fale com nossa equipe. Estamos prontos para ajudar você a montar sua festa.</p>
+          <h2 id="cta-title">Quer sua festa em destaque?</h2>
+          <p>Envie fotos da sua montagem e apareça em nosso portfólio.</p>
           <div class="cta-actions">
-            <a href="contato.html" class="btn btn-primary btn-lg">Fale conosco</a>
-            <a href="https://wa.me/5585999999999" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">WhatsApp</a>
+            <a href="contato.html" class="btn btn-primary btn-lg">Enviar foto</a>
+            <a href="galeria.html" class="btn btn-ghost btn-lg">Ver galeria</a>
           </div>
         </div>
       </div>
@@ -198,6 +193,6 @@
 
   <script src="../js/main.js" defer></script>
   <script src="../js/chatbot.js" defer></script>
-  <script src="../js/faq.js" defer></script>
+  <script src="../js/services.js" defer></script>
 </body>
 </html>

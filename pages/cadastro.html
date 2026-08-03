@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro | Área do Cliente Glipearte</title>
+  <meta name="description" content="Crie sua conta na Glipearte e acompanhe seus agendamentos e pedidos de aluguel para festas.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body class="auth-page">
+  <a href="#main-content" class="skip-link">Pular para conteúdo principal</a>
+  <header class="site-header auth-header" id="topo">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html" aria-label="Glipearte Pegue e Monte - Página inicial">
+        <img src="../images/logo-glipearte.svg" alt="Glipearte Pegue e Monte" width="180" height="60">
+      </a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="auth-section" aria-labelledby="register-title">
+      <div class="container">
+        <div class="auth-card reveal">
+          <h1 id="register-title">Criar conta</h1>
+          <p>Cadastre-se para agendar, acompanhar pedidos e receber ofertas exclusivas.</p>
+          <form class="auth-form" id="register-form" action="#" method="post" novalidate>
+            <div class="form-group">
+              <label for="register-name">Nome completo <span aria-label="obrigatório">*</span></label>
+              <input type="text" id="register-name" name="name" required aria-required="true" autocomplete="name">
+              <span class="error-message" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="register-email">E-mail <span aria-label="obrigatório">*</span></label>
+              <input type="email" id="register-email" name="email" required aria-required="true" autocomplete="email">
+              <span class="error-message" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="register-phone">Telefone <span aria-label="obrigatório">*</span></label>
+              <input type="tel" id="register-phone" name="phone" required aria-required="true" autocomplete="tel" placeholder="(85) 99999-9999">
+              <span class="error-message" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="register-password">Senha <span aria-label="obrigatório">*</span></label>
+              <div class="password-wrapper">
+                <input type="password" id="register-password" name="password" required aria-required="true" autocomplete="new-password" minlength="6">
+                <button type="button" class="toggle-password" aria-label="Mostrar senha" data-target="register-password">👁</button>
+              </div>
+              <span class="error-message" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="register-password-confirm">Confirmar senha <span aria-label="obrigatório">*</span></label>
+              <div class="password-wrapper">
+                <input type="password" id="register-password-confirm" name="password_confirm" required aria-required="true" autocomplete="new-password">
+                <button type="button" class="toggle-password" aria-label="Mostrar senha" data-target="register-password-confirm">👁</button>
+              </div>
+              <span class="error-message" aria-live="polite"></span>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" id="register-privacy" name="privacy" required aria-required="true">
+              <label for="register-privacy">Li e concordo com a <a href="privacidade.html">Política de Privacidade</a> e os <a href="termos.html">Termos de Uso</a>.</label>
+              <span class="error-message" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Criar conta</button>
+            <div class="form-feedback" role="status" aria-live="polite"></div>
+          </form>
+          <div class="auth-footer">
+            <p>Já tem conta? <a href="login.html">Entrar</a></p>
+            <p><a href="../index.html">Voltar para o site</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer compact">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Glipearte Pegue e Monte. Todos os direitos reservados.</p>
+        <p>Desenvolvido por <strong>Pedro Correia Lopes Filho</strong>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/forms.js" defer></script>
+  <script src="../js/auth.js" defer></script>
+</body>
+</html>

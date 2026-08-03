@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área do Cliente | Glipearte Pegue e Monte</title>
+  <meta name="description" content="Acompanhe seus agendamentos, pedidos e histórico de locações na Glipearte.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Pular para conteúdo principal</a>
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html" aria-label="Glipearte Pegue e Monte - Página inicial">
+        <img src="../images/logo-glipearte.svg" alt="Glipearte Pegue e Monte" width="180" height="60">
+      </a>
+      <nav class="main-nav" id="nav-menu" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="../index.html">Voltar ao site</a></li>
+          <li><a href="area-cliente.html" class="active" aria-current="page">Painel</a></li>
+          <li><a href="#" id="logout-link">Sair</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <span class="eyebrow reveal">Bem-vindo(a)</span>
+        <h1 id="page-title" class="reveal">Área do Cliente</h1>
+        <p class="reveal">Acompanhe seus agendamentos, faça novas reservas e gerencie seus dados.</p>
+      </div>
+    </section>
+
+    <section class="section dashboard" aria-labelledby="dashboard-title">
+      <div class="container">
+        <h2 id="dashboard-title" class="visually-hidden">Painel do cliente</h2>
+        <div class="dashboard-grid">
+          <article class="dashboard-card reveal">
+            <h3>Próximos agendamentos</h3>
+            <div class="dashboard-list" id="upcoming-list">
+              <p>Você não tem agendamentos futuros.</p>
+            </div>
+            <a href="agendamento.html" class="btn btn-primary">Novo agendamento</a>
+          </article>
+          <article class="dashboard-card reveal">
+            <h3>Histórico de locações</h3>
+            <div class="dashboard-list" id="history-list">
+              <p>Nenhuma locação registrada.</p>
+            </div>
+          </article>
+          <article class="dashboard-card reveal">
+            <h3>Dados da conta</h3>
+            <dl class="account-info">
+              <dt>Nome</dt><dd id="account-name">Cliente Glipearte</dd>
+              <dt>E-mail</dt><dd id="account-email">cliente@glipearte.com.br</dd>
+              <dt>Telefone</dt><dd id="account-phone">(85) 99999-9999</dd>
+            </dl>
+            <a href="#" class="btn btn-ghost">Editar perfil</a>
+          </article>
+          <article class="dashboard-card reveal">
+            <h3>Ações rápidas</h3>
+            <ul class="quick-actions">
+              <li><a href="servicos.html">Ver catálogo</a></li>
+              <li><a href="contato.html">Falar com atendimento</a></li>
+              <li><a href="depoimentos.html">Deixar depoimento</a></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Glipearte Pegue e Monte. Todos os direitos reservados.</p>
+        <p>Desenvolvido por <strong>Pedro Correia Lopes Filho</strong>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/auth.js" defer></script>
+</body>
+</html>
