@@ -1,0 +1,268 @@
+/* =========================================================
+   Glipearte Pegue e Monte - Animations & Effects
+   Suavidade, performance e acessibilidade
+   ========================================================= */
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal.delay-1 { transition-delay: 0.1s; }
+.reveal.delay-2 { transition-delay: 0.2s; }
+.reveal.delay-3 { transition-delay: 0.3s; }
+.reveal.delay-4 { transition-delay: 0.4s; }
+
+/* Stagger for grids */
+.steps-grid .reveal:nth-child(1) { transition-delay: 0.05s; }
+.steps-grid .reveal:nth-child(2) { transition-delay: 0.15s; }
+.steps-grid .reveal:nth-child(3) { transition-delay: 0.25s; }
+
+.services-grid .reveal:nth-child(1) { transition-delay: 0.05s; }
+.services-grid .reveal:nth-child(2) { transition-delay: 0.1s; }
+.services-grid .reveal:nth-child(3) { transition-delay: 0.15s; }
+.services-grid .reveal:nth-child(4) { transition-delay: 0.2s; }
+
+.diff-grid .reveal:nth-child(1) { transition-delay: 0.05s; }
+.diff-grid .reveal:nth-child(2) { transition-delay: 0.1s; }
+.diff-grid .reveal:nth-child(3) { transition-delay: 0.15s; }
+.diff-grid .reveal:nth-child(4) { transition-delay: 0.2s; }
+.diff-grid .reveal:nth-child(5) { transition-delay: 0.25s; }
+.diff-grid .reveal:nth-child(6) { transition-delay: 0.3s; }
+
+.portfolio-grid .reveal:nth-child(1) { transition-delay: 0.05s; }
+.portfolio-grid .reveal:nth-child(2) { transition-delay: 0.1s; }
+.portfolio-grid .reveal:nth-child(3) { transition-delay: 0.15s; }
+.portfolio-grid .reveal:nth-child(4) { transition-delay: 0.2s; }
+
+/* Hero subtle float */
+.hero-content .reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.hero-content .reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hero-content .reveal:nth-child(1) { transition-delay: 0.1s; }
+.hero-content .reveal:nth-child(2) { transition-delay: 0.25s; }
+.hero-content .reveal:nth-child(3) { transition-delay: 0.4s; }
+.hero-content .reveal:nth-child(4) { transition-delay: 0.55s; }
+.hero-content .reveal:nth-child(5) { transition-delay: 0.7s; }
+
+/* Hero background shimmer */
+.hero-bg {
+  animation: heroShimmer 12s ease-in-out infinite alternate;
+}
+
+@keyframes heroShimmer {
+  0% { opacity: 0.6; transform: scale(1); }
+  100% { opacity: 1; transform: scale(1.03); }
+}
+
+/* Badge pulse */
+.badge {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.badge:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+/* Card lift */
+.service-card, .info-card, .blog-card, .testimonial-card, .step-card, .extra-item, .dashboard-card, .contact-card, .booking-wrapper, .auth-card, .contact-form-wrapper {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover, .info-card:hover, .blog-card:hover, .testimonial-card:hover, .step-card:hover, .extra-item:hover, .dashboard-card:hover, .contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
+/* Link hover underline grow */
+.link-arrow::after {
+  transition: transform 0.2s ease;
+}
+
+/* Button ripple effect base */
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+.btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 0.5s, opacity 0.5s;
+}
+.btn:active::after {
+  opacity: 1;
+  transform: scale(2.5);
+  transition: 0s;
+}
+
+/* Social icons bounce */
+.social-links a {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.social-links a:hover, .social-links a:focus {
+  transform: translateY(-3px);
+}
+
+/* FAQ smooth expand */
+.faq-item {
+  transition: box-shadow 0.3s ease;
+}
+.faq-item[open] {
+  box-shadow: var(--shadow-md);
+}
+.faq-item summary h3 {
+  transition: color 0.2s ease;
+}
+.faq-item[open] summary h3 {
+  color: var(--color-dark);
+}
+
+/* Gallery item zoom */
+.gallery-item img, .portfolio-item img {
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), filter 0.3s ease;
+}
+.gallery-item:hover img, .portfolio-item:hover img {
+  transform: scale(1.07);
+  filter: brightness(1.05);
+}
+
+/* Lightbox image */
+#lightbox-img {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Chat window */
+.chat-window {
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+.chat-window.active {
+  transform: translateY(0) scale(1);
+}
+
+/* Form focus glow */
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Error shake */
+.form-group input.error, .form-group textarea.error, .form-group select.error {
+  animation: shake 0.4s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-4px); }
+  40%, 80% { transform: translateX(4px); }
+}
+
+/* Loading spinner */
+.loading-spinner {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(255,255,255,0.3);
+  border-top-color: var(--color-light);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Skeleton loading */
+.skeleton {
+  background: linear-gradient(90deg, var(--color-bg-alt) 25%, var(--color-border) 50%, var(--color-bg-alt) 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s ease-in-out infinite;
+  border-radius: var(--radius-sm);
+}
+
+@keyframes skeleton-loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Back to top */
+.back-to-top {
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s ease, background-color 0.2s ease;
+}
+.back-to-top:hover {
+  transform: translateY(-4px);
+}
+
+/* Header scroll state */
+.site-header {
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.site-header.scrolled {
+  box-shadow: var(--shadow-md);
+  background: rgba(250, 249, 246, 0.98);
+}
+
+/* Hero gradient animation */
+.hero {
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .hero-content .reveal,
+  .hero-bg,
+  .hero,
+  .badge,
+  .service-card,
+  .info-card,
+  .blog-card,
+  .testimonial-card,
+  .step-card,
+  .extra-item,
+  .dashboard-card,
+  .contact-card,
+  .gallery-item img,
+  .portfolio-item img,
+  .btn::after,
+  .social-links a,
+  .back-to-top,
+  .site-header,
+  .faq-item,
+  .loading-spinner,
+  .skeleton,
+  .form-group input.error,
+  .form-group textarea.error,
+  .form-group select.error {
+    animation: none !important;
+    transition: none !important;
+  }
+  .reveal, .reveal.active, .hero-content .reveal, .hero-content .reveal.active {
+    opacity: 1;
+    transform: none;
+  }
+}
